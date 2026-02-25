@@ -8,8 +8,9 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import AllDoctorsPage from "./pages/AllDoctorsPage";
 import ContactPage from "./pages/ContactPage";
-import SignupPage from "./pages/SIgnupPage";
+
 import SigninPage from "./pages/SigninPage";
+import SignupPage from "./pages/SignupPage";
 
 
 function App() {
