@@ -10,8 +10,9 @@ import AllDoctorsPage from "./pages/AllDoctorsPage";
 import ContactPage from "./pages/ContactPage";
 
 import SigninPage from "./pages/SigninPage";
-import SignupPage from "./pages/SignupPage";
-import SingleDoctorPage from "./components/SingleDoctorPage";
+import SignupPage from "./pages/SignUpPage";
+import SingleDoctorPage from "./pages/SingleDoctorPage";
+import Error404Page from "./pages/Error404Page";
 
 
 function App() {
@@ -28,10 +29,11 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/all-doctors" element={<AllDoctorsPage />} />
-      <Route path="/all-doctors/:id" element={<SingleDoctorPage />} />
+      <Route path="/all-doctors/:doctorid" element={<SingleDoctorPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/signin" element={<SigninPage />} />
+      <Route path="*" element={<Error404Page/>}/>
     </Routes>
   );
 }

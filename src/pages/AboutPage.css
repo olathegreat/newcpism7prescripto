@@ -1,0 +1,95 @@
+.about-page .about-us{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.about-page .about{
+    color: #4B5563;
+}
+.about-page .us{
+    color: #1F2937;
+}
+.about-page .aboutt{
+    display: flex;
+    /* width: 100%; */
+}
+.about-page .text{
+    width: 80%;
+    margin-top: 50px;
+}
+.about-page .images{
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.about-page .para{
+    color: #4B5563;
+    margin-top: 70px;
+}
+.about-page .para1{
+    margin-top: 30px;
+    color: #4B5563;
+}
+.about-page .our-vision{
+    color: #4B5563;
+    margin-top: 30px;
+}
+.about-page .para2{
+    margin-top: 30px;
+    color: #4B5563;
+}
+.about-page .why-us{
+    display: flex;
+    gap: 5px;
+    margin-top: 60px;
+    margin-left: 35px;
+}
+.about-page .eff{
+    color: #1F2937;
+}
+.about-page .eff-para{
+    color: #4B5563;
+    width: 300px;
+    margin-top: 20px;
+}
+.about-page .eff-para1{
+    color: #4B5563;
+    width: 300px;
+}
+.about-page .form-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.about-page .over-eff{
+    padding: 30px 60px;
+    background-color: white;
+    border: 2px solid #ABABAB;
+    flex: 1;
+}
+.about-page .overall-eff{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+    .about-page .aboutt{
+        flex-direction: column;
+    }
+    .about-page .overall-eff{
+        flex-direction: column;
+        margin: 10px;
+        
+    }
+    .about-page .over-eff{
+        width: 100%;
+        
+    }
+    .about-page .eff-para{
+        width: 250px;
+    }
+    .about-page .text{
+        margin: 30px;
+    }
+}
