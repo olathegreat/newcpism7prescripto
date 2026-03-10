@@ -7,7 +7,7 @@ const SigninPage = () => {
   return (
     <div className='sign-in'>
     
-          <NavComponent />
+       
     
           <div className='wrapper'>
             <div className='all'>

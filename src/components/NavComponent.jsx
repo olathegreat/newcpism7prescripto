@@ -21,7 +21,9 @@ const NavComponent = () => {
                   <li><Link to="/">Home</Link></li>
                   <li><Link to="/all-doctors">All Doctors</Link></li>
                   <li><Link to="/about">About</Link></li>
-                  <li><Link to="/contact">Contact</Link></li>            
+                  <li><Link to="/contact">Contact</Link></li>
+                  <li><Link to="/Appointment">My appointment</Link></li>
+                  <li><Link to="/profile">Profile</Link></li>
               </ul>       
           </div>
 
@@ -69,7 +71,9 @@ const NavComponent = () => {
                   <li><Link to="/all-doctors">All Doctors</Link></li>
                   <li><Link to="/about">About</Link></li>
                   <li><Link to="/contact">Contact</Link></li>
-                  <li><Link to="/signup">Signup</Link></li>
+                              <li><Link to="/signup">Signup</Link></li>
+                               
+                              
                 </ul>
 
                           <button className='button-blue'>

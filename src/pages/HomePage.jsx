@@ -4,15 +4,19 @@ import "./HomePage.css"
 import HeroComponent from '../components/HeroComponent'
 import FindBySpeciality from '../components/FindBySpeciality'
 import TopDoctors from '../components/TopDoctors'
+import FooterComponent from '../components/FooterComponent'
+import AppointmentComponent from '../components/AppointmentComponent'
 
 
-const HomePage = () => {
+const HomePage = (props) => {
   return (
       <div className='home-page'>
-          <NavComponent />  
+          
           <HeroComponent /> 
           <FindBySpeciality />
-          <TopDoctors/>
+      <TopDoctors doctorsData = {props.doctorsData} />
+      <AppointmentComponent/>
+      <FooterComponent/>
     </div>
   )
 }
