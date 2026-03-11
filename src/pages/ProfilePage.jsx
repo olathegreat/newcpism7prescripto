@@ -2,17 +2,28 @@ import React from 'react'
 import "./ProfilePage.css"
 import NavComponent from '../components/NavComponent'
 import FooterComponent from '../components/FooterComponent'
+import { useNavigate } from 'react-router-dom'
 
 
 
 const ProfilePage = () => {
+    const storedData = JSON.parse(localStorage.getItem("userInfo"));
+    console.log(storedData);
+    const navigate = useNavigate();
+    const logoutFunction = ()=>{
+
+                        
+                            localStorage.removeItem("userInfo");
+                            navigate("/signup");
+
+                            }
     return (
         <div>
           
             <div className='profile-page'>
 
             <div className='prof-img'>
-                <img src='/pro.png' alt=''></img>
+                <img src={storedData?.userimage} alt=''></img>
                 <img src='/profileimage.png' alt=''></img>
             </div>
 
@@ -61,6 +72,11 @@ const ProfilePage = () => {
             <div className="button-container">
                 <button className="btn edit-btn">Edit</button>
                 <button className="btn save-btn">Save Information</button>
+
+                    <button 
+                        onClick={logoutFunction} 
+                       
+                        className="button-logout">Log out</button>
             </div>
             </div>
             <FooterComponent />

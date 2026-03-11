@@ -4,6 +4,7 @@ body{
   background-color: white;
   max-width: 1280px;
   margin: auto;
+  overflow-x: hidden;
 }
 *{
   margin: 0;
@@ -11,6 +12,11 @@ body{
   padding: 0;
   box-sizing: border-box;
 
+}
+.error-message{
+  color: red !important;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .button-blue{

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'react-toastify/dist/ReactToastify.css';
 import "./App.css";
 import NavComponent from "./components/NavComponent";
 import HomePage from "./pages/HomePage";

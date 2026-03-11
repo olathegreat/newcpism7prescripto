@@ -1,12 +1,26 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./NavComponent.css"
 import { ImCancelCircle } from "react-icons/im";
 import { Link } from 'react-router-dom'
+
 import { IoMenuSharp } from "react-icons/io5";
 
 
 const NavComponent = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+   
+    
+    
+    const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const storedData = localStorage.getItem("userInfo");
+
+    if (storedData) {
+      setUser(JSON.parse(storedData));
+    }
+  });
+   
   return (
       <nav>
           <div className='nav-logo'>
@@ -28,10 +42,23 @@ const NavComponent = () => {
           </div>
 
           <div className='large-screen'>
-              <button className='button-blue'>
+              {
+                  user === null || user === undefined ? (
+                       <button className='button-blue'>
                     <Link to="/signup">Create Account</Link>
                 
               </button>
+                  ) : (
+                          
+                         <img className='nav-profile-img' src={ user.userimage} alt="üser profile image" />  
+                          
+                  )
+              }
+              
+              
+
+
+             
               
           </div>
 
